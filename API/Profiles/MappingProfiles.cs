@@ -31,36 +31,7 @@ namespace API.Profiles
             CreateMap<Puesto, PuestoDto>().ReverseMap();
             CreateMap<Region, RegionDto>().ReverseMap();
 
-            CreateMap<Cliente, ClienteNombreDto>().ReverseMap();
-            CreateMap<Estado, EstadoNombreDto>().ReverseMap();
-            CreateMap<Cliente, ClienteIdDto>().ReverseMap();
             CreateMap<Pedido, PedidoIdClienteIdFechaEntregaDto>().ReverseMap();
-            CreateMap<Ciudad, OficinaIdCiudadNombreDto>().ReverseMap();
-            CreateMap<Oficina, OficinaIdDto>().ReverseMap();
-            CreateMap<OficinaIdDto, OficinaIdCiudadNombreDto>().ReverseMap();
-            CreateMap<OficinaIdCiudadNombreDto, OficinaIdDto>().ReverseMap();
-            CreateMap<Direccion, OficinaIdDto>().ReverseMap();
-            CreateMap<Oficina, OficinaIdTelefonoDto>().ReverseMap();
-            CreateMap<Empleado, EmpleadoNombreApellidosEmailDto>().ReverseMap();
-            CreateMap<Formapago, FormaPagoNombreDto>().ReverseMap();
-            CreateMap<Producto, ProductoNormalDto>().ReverseMap();
-            CreateMap<Pais, ClientesCantidadPaisDto>().ReverseMap();
-            CreateMap<Ciudad, ClientesCantidadCiudadDto>().ReverseMap();
-            CreateMap<Cliente, ClientesCantidadDto>().ReverseMap();
-            CreateMap<Producto, ProductoMaxDto>().ReverseMap();
-            CreateMap<Producto, ProductoMinDto>().ReverseMap();
-            CreateMap<Producto, ProductoPrecioMaxDto>().ReverseMap();
-            CreateMap<Cliente, ClienteMaxCreditoDto>().ReverseMap();
-            CreateMap<Cliente, ClienteSinPagoDto>().ReverseMap();
-            CreateMap<Empleado, EmpleadoSoriaDto>().ReverseMap();
-            CreateMap<Detallepedido, DetalleNombreDto>().ReverseMap();
-            CreateMap<Empleado, ClientesCantidadPaisDto>().ReverseMap();
-
-            CreateMap<Cliente, ClienteRepresentanteVentasDto>().ReverseMap();
-            CreateMap<ClientePagosRepresentanteDto, Cliente>().ReverseMap();
-            CreateMap<User, UserDto>().ReverseMap();
-            CreateMap<UserDto, User>().ReverseMap();
-            CreateMap<UserRegisterDto, UserDto>().ReverseMap();
         }
     }
 }
